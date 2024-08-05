@@ -12,7 +12,7 @@ function Freebook() {
   useEffect(() => {
     const getfreeBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/freebook");
+        const res = await axios.get("/freebook");
 
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
